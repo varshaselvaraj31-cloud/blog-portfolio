@@ -1,0 +1,14 @@
+{
+  "name": "blog-portfolio",
+  "version": "1.0.0",
+  "description": "Full Stack Blog Portfolio Web Application with MongoDB, Firebase Authentication, and Admin Access",
+  "scripts": {
+    "start": "echo Please run 'npm run backend' in one terminal and 'npm run frontend' in another terminal, or double-click start-all.bat",
+    "backend": "cd blog-project-starter-backend && npm start",
+    "frontend": "cd blog-project-starter-frontend && npm start",
+    "install:all": "cd blog-project-starter-backend && npm install && cd ../blog-project-starter-frontend && npm install"
+  },
+  "keywords": ["blog", "portfolio", "mern", "mongodb", "firebase", "react"],
+  "author": "",
+  "license": "ISC"
+}
