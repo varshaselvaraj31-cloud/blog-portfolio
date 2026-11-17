@@ -1,14 +1,15 @@
 import { initializeApp, getApps } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-// Firebase configuration from environment variables or defaults
+// Real Firebase Project Configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY || "AIzaSyDummyKeyForPortfolioProject123456",
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || "blog-portfolio-errormakesclever.firebaseapp.com",
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "blog-portfolio-errormakesclever",
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "blog-portfolio-errormakesclever.appspot.com",
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "102938475610",
-  appId: process.env.REACT_APP_FIREBASE_APP_ID || "1:102938475610:web:123456abcdef7890"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY || "AIzaSyCLzEgD58zc0B1vAEGgObjijEa_qtcmJ4o",
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || "blog-portfolio-54dde.firebaseapp.com",
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "blog-portfolio-54dde",
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "blog-portfolio-54dde.firebasestorage.app",
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "886686686487",
+  appId: process.env.REACT_APP_FIREBASE_APP_ID || "1:886686686487:web:9ae9913d38e0e94bcb6b52",
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID || "G-V3W23XFP8T"
 };
 
 // Initialize Firebase
