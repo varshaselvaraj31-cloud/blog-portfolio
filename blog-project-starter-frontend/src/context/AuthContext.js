@@ -91,7 +91,8 @@ export const AuthProvider = ({ children }) => {
       const isPlaceholderConfig = !process.env.REACT_APP_FIREBASE_API_KEY ||
         firebaseError.code === 'auth/invalid-api-key' ||
         firebaseError.code === 'auth/api-key-not-valid' ||
-        firebaseError.code === 'auth/network-request-failed';
+        firebaseError.code === 'auth/network-request-failed' ||
+        firebaseError.code === 'auth/configuration-not-found';
 
       if (isPlaceholderConfig) {
         console.info("Using local authentication mode:", firebaseError.message);
@@ -153,7 +154,8 @@ export const AuthProvider = ({ children }) => {
       const isPlaceholderConfig = !process.env.REACT_APP_FIREBASE_API_KEY ||
         firebaseError.code === 'auth/invalid-api-key' ||
         firebaseError.code === 'auth/api-key-not-valid' ||
-        firebaseError.code === 'auth/network-request-failed';
+        firebaseError.code === 'auth/network-request-failed' ||
+        firebaseError.code === 'auth/configuration-not-found';
 
       if (isPlaceholderConfig) {
         console.info("Attempting local authentication login:", firebaseError.message);
